@@ -1,0 +1,16 @@
+version = 1
+
+test_patterns = ["tests/**"]
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  dialect = "typescript"
+  environment = [
+    "jest",
+    "nodejs",
+    "browser",
+    "mongo"
+  ]
